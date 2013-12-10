@@ -1,7 +1,5 @@
 language: java
-before_install:
-- ./maven-color
 jdk:
 - openjdk6
 script:
-- mvn clean install
+- ./maven-color clean install
