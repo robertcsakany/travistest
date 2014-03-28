@@ -1,2 +1,2 @@
 #!/bin/bash
-mvn clean install  | sed -E '/(\[INFO\].Downloading:.*).*/d;/(Downloading:.*).*/d;/([0-9]+\/[0-9]+ +K?B +).*/d'
+mvn clean install -P karaf | sed -E '/(\[INFO\].Downloading:.*).*/d;/(Downloading:.*).*/d;/([0-9]+\/[0-9]+ +K?B +).*/d'
