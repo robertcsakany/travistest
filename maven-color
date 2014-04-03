@@ -41,6 +41,7 @@ LightCyanBG=`echo -e "\033[1;46m"`
 
 LC_CTYPE=C
 
+
 mvn $@ | \
 sed --posix -e "s/\(\[INFO\]\ \-.*\)/${LightCyan}${BOLD_ON}\1${RESET}/g;s/\(\[INFO\]\ \-\-\-\ .*\)/${BOLD_ON}${UNDERLINE_ON}\1${RESET}/g;s/\(\[INFO\]\ Installing\)/${BOLD_ON}${Red}\1${RESET}/g;s/\(\[INFO\]\ BUILD SUCCESS\)/${BOLD_ON}${Green}\1${RESET}/g;s/\(\[WARNING\].*\)/${BOLD_ON}${Yellow}\1${RESET}/g;s/\(\[ERROR\].*\)/${BOLD_ON}${Red}\1${RESET}/g;s/Tests run: \([^,]*\), Failures: \([^,]*\), Errors: \([^,]*\), Skipped: \([^,]*\)/${BOLD_ON}Tests run:${Green} \1${RESET}, Failures: ${BOLD_ON}${Red}\2${RESET}, Errors: ${BOLD_ON}${Red}\3${RESET}, Skipped: ${BOLD_ON}${Yelow}\4${RESET}/g" | \
 sed --posix -E '/(\[INFO\].Downloading:.*).*/d;/(Downloading:.*).*/d;/([0-9]+\/[0-9]+ +K?B +).*/d'
