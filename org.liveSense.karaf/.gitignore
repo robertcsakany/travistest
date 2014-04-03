@@ -1,0 +1,10 @@
+.svn
+.hg
+/target
+/war
+/.settings
+/.project
+/.classpath
+/nbactions.xml
+velocity.log
+/assemblies.old/

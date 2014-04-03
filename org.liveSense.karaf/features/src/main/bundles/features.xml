@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name='liveSense-${liveSense.version}' xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+	<!-- liveSense feature repositories -->
+	<repository>mvn:com.github.livesense/org.liveSense.core/${liveSense.core.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.lucene/${liveSense.framework.lucene.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.jdbc.mysql/${liveSense.jdbc.mysql.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.jdbc.jaybird/${liveSense.jdbc.jaybird.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.jdbc.h2/${liveSense.jdbc.h2.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.misc.i18n/${liveSense.misc.i18n.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.misc.jcrom/${liveSense.misc.jcrom.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.misc.queryBuilder/${liveSense.misc.queryBuilder.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.misc.configurationLoader/${liveSense.misc.configurationLoader.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.fragment.sun.misc/${liveSense.fragment.sun.misc.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.fragment.sun.security/${liveSense.fragment.sun.security.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.fragment.com.sun.image.codec.jpeg/${liveSense.fragment.com.sun.image.codec.jpeg.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.scripting.jsp.taglib.jsonatg/${liveSense.scripting.jsp.taglib.jsonatg.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.scripting.jsp.taglib.jstl/${liveSense.scripting.jsp.taglib.jstl.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.fitnesse/${liveSense.framework.fitnesse.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.jodconverter/${liveSense.framework.jodconverter.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.jodreports/${liveSense.framework.jodreports.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.gwt/${liveSense.framework.gwt.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.misc.queryBuilder.gwt/${liveSense.misc.queryBuilder.gwt.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.gxt/${liveSense.framework.gxt.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.lucene/${liveSense.framework.lucene.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.apacheds/${liveSense.framework.apacheds.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.jasperreports/${liveSense.framework.jasperreports.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.solr/${liveSense.framework.solr.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.framework.wro4j/${liveSense.framework.wro4j.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.auth.ldap/${liveSense.auth.ldap.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.solr/${liveSense.service.solr.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.solr.configurationLoader/${liveSense.service.solr.configurationLoader.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.apacheds/${liveSense.service.apacheds.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.apacheds.configurationLoader/${liveSense.service.apacheds.configurationLoader.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.activation/${liveSense.service.activation.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.captcha/${liveSense.service.captcha.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.dataSourceProvider/${liveSense.service.dataSourceProvider.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.email/${liveSense.service.email.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.languageSelector/${liveSense.service.languageSelector.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.report.jasper/${liveSense.service.report.jasper.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.securityManager/${liveSense.service.securityManager.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.thumbnailGenerator/${liveSense.service.thumbnailGenerator.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.xssRemove/${liveSense.service.xssRemove.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.cxf/${liveSense.service.cxf.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.gwt/${liveSense.service.gwt.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.markdown/${liveSense.service.markdown.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.guacamole/${liveSense.service.guacamole.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.service.jcr.importexport/${liveSense.service.jcr.importexport.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.jcr.explorer/${liveSense.jcr.explorer.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.jcr.restexplorer/${liveSense.jcr.restexplorer.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.content.initial/${liveSense.content.initial.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.sample.gwt.notes/${liveSense.sample.gwt.notes.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.sample.gwt.notes/${liveSense.sample.gwt.notes.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.sample.simplePortal/${liveSense.sample.simplePortal.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.sample.markdown/${liveSense.sample.markdown.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.sample.solr/${liveSense.sample.solr.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.sample.webServiceServlet/${liveSense.sample.webServiceServlet.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.fragment.customloginpage/${liveSense.fragment.customloginpage.version}/xml/features</repository>
+	<repository>mvn:com.github.livesense/org.liveSense.fragment.jackrabbit.server.jaybird.ddl/${liveSense.fragment.jackrabbit.server.jaybird.ddl.version}/xml/features</repository>
+</features>

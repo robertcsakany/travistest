@@ -2,4 +2,4 @@ language: java
 jdk:
 - openjdk6
 script:
-- ./maven-color clean install
+- ./maven-color clean install -P karaf
